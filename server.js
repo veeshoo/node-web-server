@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Portfolio Page',
+        message: 'Portfolios Here!',
+    });
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
